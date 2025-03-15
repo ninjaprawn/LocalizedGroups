@@ -112,7 +112,7 @@ end)
 			local activityID1 = searchResultInfo1.activityID
 			
 			if (LN1 and ( LN1:find ("Quel'Thalas") or LN1:find ("Drakkari") or LN1:find ("Ragnaros") or not select (2, strsplit ("-", LN1)))) then 
-				local activityName = C_LFGList.GetActivityInfo (activityID1)
+				local activityName = C_LFGList.GetActivityFullName(searchResultInfo1.activityIDs[1], nil, searchResultInfo1.isWarMode)
 				
 				self.ActivityName:SetText ("|cFFFFFF00[LA]|r " .. activityName)
 				self.ActivityName:SetTextColor (0, 1, 0)
@@ -193,7 +193,7 @@ end)
 			local activityID1 = searchResultInfo1.activityID
 
 			if (LN1 and ( LN1:find ("Aman'Thul") or LN1:find ("Barthilas") or LN1:find ("Caelestrasz") or LN1:find ("Dath'Remar") or LN1:find ("Dreadmaul") or LN1:find ("Gundrak") or LN1:find ("Jubei'Thos") or LN1:find ("Khaz'goroth") or LN1:find ("Nagrand") or LN1:find ("Saurfang") or LN1:find ("Thaurissan") or LN1:find ("Frostmourne") or not select (2, strsplit ("-", LN1)))) then 
-				local activityName = C_LFGList.GetActivityInfo (activityID1)
+				local activityName = C_LFGList.GetActivityFullName(searchResultInfo1.activityIDs[1], nil, searchResultInfo1.isWarMode)
 				
 				self.ActivityName:SetText ("|cFFFFFF00[OC]|r " .. activityName)
 				self.ActivityName:SetTextColor (0, 1, 0)
@@ -270,7 +270,7 @@ end)
 			local activityID1 = searchResultInfo1.activityID
 			
 			if (LN1 and ( LN1:find ("Hyjal") or LN1:find ("Arak-arahm") or LN1:find ("Temple noir") or LN1:find ("Arathi") or LN1:find ("Archimonde") or LN1:find ("Ysondre") or LN1:find ("Chants �ternels") or LN1:find ("Cho'gall") or LN1:find ("Confr�rie du Thorium") or LN1:find ("Conseil des Ombres") or LN1:find ("Culte de la Rive noire") or LN1:find ("Dalaran") or LN1:find ("Vol'jin") or LN1:find ("Drek'Thar") or LN1:find ("Eitrigg") or LN1:find ("Sinstralis") or LN1:find ("Eldre'Thalas") or LN1:find ("Naxxramas") or LN1:find ("Varimathras") or LN1:find ("Uldaman") or LN1:find ("Garona") or LN1:find ("Illidan") or LN1:find ("Kael'thas") or LN1:find ("Sargeras") or LN1:find ("Khaz Modan") or LN1:find ("Kirin Tor") or LN1:find ("Krasus") or LN1:find ("La Croisade �carlate") or LN1:find ("Rashgarroth") or LN1:find ("Les Clairvoyants") or LN1:find ("Les Sentinelles") or LN1:find ("Mar�cage de Zangar") or LN1:find ("Medivh") or LN1:find ("Ner'zhul") or LN1:find ("Throk'Feroth") or LN1:find ("Elune") or not select (2, strsplit ("-", LN1)))) then 
-				local activityName = C_LFGList.GetActivityInfo (activityID1)
+				local activityName = C_LFGList.GetActivityFullName(searchResultInfo1.activityIDs[1], nil, searchResultInfo1.isWarMode)
 				
 				self.ActivityName:SetText ("|cFFFFFF00[OC]|r " .. activityName)
 				self.ActivityName:SetTextColor (0, 1, 0)
@@ -345,7 +345,7 @@ end)
 			local activityID1 = searchResultInfo1.activityID
 			
 			if (LN1 and ( LN1:find ("Pozzo dell'Eternit�") or LN1:find ("Nemesis") or not select (2, strsplit ("-", LN1)))) then 
-				local activityName = C_LFGList.GetActivityInfo (activityID1)
+				local activityName = C_LFGList.GetActivityFullName(searchResultInfo1.activityIDs[1], nil, searchResultInfo1.isWarMode)
 				
 				self.ActivityName:SetText ("|cFFFFFF00[LA]|r " .. activityName)
 				self.ActivityName:SetTextColor (0, 1, 0)
@@ -420,7 +420,7 @@ end)
 			local activityID1 = searchResultInfo1.activityID
 			
 			if (LN1 and (LN1:find ("Dun Modr") or LN1:find ("Uldum") or LN1:find ("Colinas Pardas") or LN1:find ("C'Thun") or LN1:find ("Shen'dralar") or LN1:find ("Exodar") or LN1:find ("Los Errantes") or LN1:find ("Minahonda") or LN1:find ("Sanguino") or LN1:find ("Zul'jin") or LN1:find ("Tyrande") or not select (2, strsplit ("-", LN1)))) then 
-				local activityName = C_LFGList.GetActivityInfo (activityID1)
+				local activityName = C_LFGList.GetActivityFullName(searchResultInfo1.activityIDs[1], nil, searchResultInfo1.isWarMode)
 				
 				self.ActivityName:SetText ("|cFFFFFF00[LA]|r " .. activityName)
 				self.ActivityName:SetTextColor (0, 1, 0)
@@ -495,7 +495,7 @@ end)
 			local activityID1 = searchResultInfo1.activityID
 			
 			if (LN1 and (LN1:find ("Razuvious") or LN1:find ("Thermaplugg") or LN1:find ("Soulflayer") or LN1:find ("Ashenvale") or LN1:find ("Azuregos") or LN1:find ("Blackscar") or LN1:find ("Lich King") or LN1:find ("Howling Fjord") or LN1:find ("Grom") or LN1:find ("Greymane") or LN1:find ("Gordunni") or LN1:find ("Goldrinn") or LN1:find ("Booty Bay") or LN1:find ("Galakrond") or LN1:find ("Borean Tundra") or LN1:find ("Deathguard") or LN1:find ("Deathweaver") or LN1:find ("Eversong") or LN1:find ("Deepholm") or LN1:find ("Fordragon") or not select (2, strsplit ("-", LN1)))) then 
-				local activityName = C_LFGList.GetActivityInfo (activityID1)
+				local activityName = C_LFGList.GetActivityFullName(searchResultInfo1.activityIDs[1], nil, searchResultInfo1.isWarMode)
 				
 				self.ActivityName:SetText ("|cFFFFFF00[LA]|r " .. activityName)
 				self.ActivityName:SetTextColor (0, 1, 0)
