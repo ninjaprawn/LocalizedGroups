@@ -30,7 +30,7 @@ end)
 			--searchResultInfo1.comment
 
 			if (LN1 and ( LN1:find ("Azralon") or LN1:find ("Nemesis") or LN1:find ("Gallywyx") or LN1:find ("Tol Barad") or LN1:find ("Goldrinn") or not select (2, strsplit ("-", LN1)))) then 
-				local activityName = C_LFGList.GetActivityInfo (activityID1)
+				local activityName = C_LFGList.GetActivityFullName(searchResultInfo1.activityIDs[1], nil, searchResultInfo1.isWarMode)
 				
 				self.ActivityName:SetText ("|cFFFFFF00[BR]|r " .. activityName)
 				self.ActivityName:SetTextColor (0, 1, 0)
